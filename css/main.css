@@ -1,0 +1,8 @@
+/* Entry point CSS (keeps original styles, separated by concern) */
+@import url("./base.css");
+@import url("./animations.css");
+@import url("./sections/navbar.css");
+@import url("./sections/mobile-menu.css");
+@import url("./sections/projects.css");
+@import url("./sections/forms.css");
+@import url("./sections/back-to-top.css");

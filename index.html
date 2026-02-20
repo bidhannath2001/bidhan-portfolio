@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of a Frontend and Flutter Developer specializing in modern web and mobile applications.">
+    <meta name="keywords" content="Frontend Developer, Flutter Developer, Web Development, Mobile App Development">
+    <title>Portfolio | Frontend & Flutter Developer</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles (split for separation of concerns) -->
+    <link rel="stylesheet" href="css/main.css">
+<!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'display': ['"Plus Jakarta Sans"', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 transition-colors duration-300">
+
+    <!-- Sections are split for separation of concerns.
+         Note: if you open this via file://, browser may block fetch() for includes.
+         Run with a local dev server (VS Code Live Server) for best results. -->
+
+    <div data-include="sections/nav.html"></div>
+
+    <main>
+        <div data-include="sections/hero.html"></div>
+        <div data-include="sections/about.html"></div>
+        <div data-include="sections/skills.html"></div>
+        <div data-include="sections/projects.html"></div>
+        <div data-include="sections/services.html"></div>
+        <div data-include="sections/contact.html"></div>
+    </main>
+
+    <div data-include="sections/footer.html"></div>
+
+    <!-- JavaScript (split for separation of concerns) -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

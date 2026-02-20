@@ -1,0 +1,10 @@
+/* Mobile Menu Slide Animation */
+#mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+#mobile-menu.show {
+    max-height: 400px;
+}
